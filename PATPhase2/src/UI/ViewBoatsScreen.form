@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="btnGr1">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="pnlBG" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="pnlBG" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="pnlBG">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jScrollPane1" pref="626" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lblHINLengthChk" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="lblHINFormatChk" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btnHelp" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="lblHIN" max="32767" attributes="0"/>
+                                  <Component id="lblNoS" max="32767" attributes="0"/>
+                                  <Component id="lblBoatName" max="32767" attributes="0"/>
+                                  <Component id="txtBoatName" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtSeatNumbers" max="32767" attributes="0"/>
+                                  <Component id="txtHINNumber" alignment="0" min="-2" pref="203" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="lblHINPressenceChk" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblBNLogicChk" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblBNPressenceChk" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblNSPressenceChk" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblNSRangeChk" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblNSLogicChk" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="btnEdit" min="-2" pref="125" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btnDelete" min="-2" pref="125" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="lblOTPressenceChk" min="-2" max="-2" attributes="0"/>
+                              <Component id="datePick" max="32767" attributes="0"/>
+                              <Component id="lblOarType" alignment="0" max="32767" attributes="0"/>
+                              <Component id="lblDoP" min="-2" pref="202" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="rbtnSculling" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="rbtnSweep" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="lblDPPressenceChk" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="btnSave" min="-2" pref="125" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="btnCancel" min="-2" pref="125" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="lblDPLogicChk" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="200" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="btnEdit" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                          <Component id="btnDelete" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="btnCancel" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                          <Component id="btnSave" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblBoatName" min="-2" pref="19" max="-2" attributes="0"/>
+                      <Component id="lblOarType" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="txtBoatName" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="rbtnSculling" alignment="0" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="rbtnSweep" alignment="0" min="-2" pref="35" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblBNPressenceChk" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblOTPressenceChk" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="lblBNLogicChk" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblNoS" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                      <Component id="lblDoP" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="txtSeatNumbers" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="datePick" min="-2" pref="35" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblNSPressenceChk" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblDPPressenceChk" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblNSRangeChk" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblDPLogicChk" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="lblNSLogicChk" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="lblHIN" min="-2" pref="19" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtHINNumber" min="-2" pref="35" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                          <Component id="lblHINPressenceChk" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblHINLengthChk" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnHelp" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblHINFormatChk" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JList" name="listBoats">
+              <Properties>
+                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                  <StringArray count="0"/>
+                </Property>
+                <Property name="selectionMode" type="int" value="0"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="btnEdit">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEditActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnSave">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Save"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblBoatName">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Boat Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtBoatName">
+          <Properties>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblNoS">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Number of Seats"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtSeatNumbers">
+          <Properties>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblHIN">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Hull Identification Number"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtHINNumber">
+          <Properties>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblOarType">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Oar Type"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="rbtnSculling">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="99" red="99" type="rgb"/>
+            </Property>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="btnGr1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sculling"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="rbtnSweep">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="99" red="99" type="rgb"/>
+            </Property>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="btnGr1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sweep"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblDoP">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Date of Purchase"/>
+          </Properties>
+        </Component>
+        <Component class="org.jdatepicker.JDatePicker" name="datePick">
+          <Properties>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnHelp">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Help"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHelpActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnCancel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCancelActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblBNPressenceChk">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Boat name is empty, requries input"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblBNLogicChk">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Name can&apos;t contain any numbers"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblNSPressenceChk">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Number of seats is empty, requries input"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblNSRangeChk">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Seat number is out of allowed range"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblNSLogicChk">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Seat number can only be an interger"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblHINPressenceChk">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="HIN is empty, requires input"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblHINLengthChk">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="HIN is the incorrect length, needs to be 12 characters long"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblHINFormatChk">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="HIN must have a county code, first 2 characters must be letters"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblOTPressenceChk">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Oar type is empty, one must be selected"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblDPPressenceChk">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Date is empty, requries input"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblDPLogicChk">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Purchase date is in the future, must be in the past"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="txtErr">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="btnDelete">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Delete"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
