@@ -14,7 +14,7 @@ public class SetBoatScreen extends javax.swing.JFrame {
 
     Users user;
     Dashboard dash;
-    DatabaseConnector db = new DatabaseConnector();
+    DatabaseConnector db;
 
     /**
      * Creates new form SetBoatScreen
@@ -30,6 +30,7 @@ public class SetBoatScreen extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         user = userN;
         dash = dashN;
+        db = dash.db;
         //Calls the helper methode to populate the comboBox
         populateCBox();
     }
