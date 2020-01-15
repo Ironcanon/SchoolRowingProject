@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>
+            Help Page
+        </title>
+        <style>
+            #tableList {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+
+            .leftFloat {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #111111;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to the help file</h1>
+        <p>Table of contents:</p>
+        <ul id = "tableList">
+            <li class = "leftFloat"><a href="#LoginScreen" >The login screen</a></li>
+            <li class = "leftFloat"><a href="#DashboardScreen" >The dashboard screen</a></li>
+            <li class = "leftFloat"><a href="#BoatInputScreen" >The add boat screen</a></li>
+            <li class = "leftFloat"><a href="#ViewBoatScreen" >The view boat screen</a></li>
+            <li class = "leftFloat"><a href="#SetBoatScreen" >The set boat screen</a></li>
+            <li class = "leftFloat"><a href="#SwapBoatScreen" >The swap boat screen</a></li>
+        </ul>
+        <h3 id = "LoginScreen">The login screen</h3>
+        <img src = "LoginScreen.png" alt = "The login screen">
+        <p>
+            This is the opening screen of the program, to access the rest of the program you will have to enter a valid username and password.
+            You should have been given a valid username and password by your school's administrator or head coach. If you are struggling to login ensure that you are entering the correct username and password combination.
+            If the issue persists please inform your school's administrator or head coach.
+        </p>
+        <h3 id ="DashboardScreen">The dashboard screen</h3>
+        <img src = "DashboardScreen.png" alt = "The dashboard screen">
+        <p>
+            This is the main screen of the program as it is where the GUI, the visual representation of the trailer layout, lives.
+            The user can't actually do very much on the dashboard screen but they can access every other part of the program from here including the view boat screen, the set boat screen and the swap boat screens.
+            If the GUI of the program is empty it means that the admin of the school the user is currently signed in under has either not yet placed any boats in the trailer or that the school has not entered any boats into the database.
+        </p>
+        <h3 id ="BoatInputScreen">The add boat screen</h3>
+        <img src = "BoatInputScreen.png" alt = "The boat input screen">
+        <p>
+            This is where admins can add boats to their school's database.
+            To successfully input a boat into the database it must pass a validation test which is performed on all of the fields:<br>
+            Firstly all the fields must have data inputed, whether it is a text field or a radio button selection, then there are specifics for each data piece entered.
+        </p>
+        <ul>
+            <li>For boat names they can not contain numbers but can contain symbols.</li>
+            <li>For the number of seats it has to be a number that is either 1,2,4 or 8.</li>
+            <li>For the HIN of the boat it has to have a length of 12 and the first 2 characters have to be characters</li>
+            <li>For the oar type it only has to have one selected</li>
+            <li>For the purchase date it must be in the past</li>
+        </ul> 
+        <h3 id ="ViewBoatScreen">The view boat screen</h3>
+        <img src = "ViewBoatScreen.png" alt = "The view boat screen">
+        <p>
+            This screen is where all users can view the boats in the current school's database and admins can also edit and delete boats. 
+            If the edit and delete buttons are greyed out this means that the current user is not an admin and so can not edit or delete boats.
+            The list at the top of the screen should contain all the boats in the current user's school's database, if it is empty then the school currently has no boats in the database.
+        </p>  
+        <h3 id ="SetBoatScreen">The set boat screen</h3>
+        <img src = "SetBoatScreen.png" alt = "The set boat screen">
+        <p>
+            This is where admins set boats in the database to slots in the trailer GUI. If the set boat combo box is empty then there are not any boats in the database for the user's school 
+        </p> 
+        <h3 id ="SwapBoatScreen">The swap boat screen</h3>
+        <img src = "SwapBoatScreen.png" alt = "The swap boat screen">
+        <p>
+            This is where admins can swap boats that are already in the trailer GUI.
+            If there is only one boat in the GUI it will be the only boat in both combo boxes, otherwise it will show all the boats in the trailer GUI in both combo boxes.
+        </p>    
+    </body>
+</html>
