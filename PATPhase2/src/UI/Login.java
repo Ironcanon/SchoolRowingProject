@@ -122,7 +122,7 @@ public class Login extends javax.swing.JFrame {
 
         DatabaseConnector db = new DatabaseConnector();
         if (db.checkUsername(username) && db.checkPassword(username, password)) {
-            Dashboard dash = new Dashboard(db.getUser(username));
+            Dashboard dash = new Dashboard(db.getUser(username), db);
 
             this.setVisible(false);
             dash.setVisible(true);

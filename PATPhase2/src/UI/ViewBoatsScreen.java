@@ -19,7 +19,8 @@ import javax.swing.JOptionPane;
 public class ViewBoatsScreen extends javax.swing.JFrame {
 
     private Users user;
-    DatabaseConnector db = new DatabaseConnector();
+    private Dashboard dash;
+    DatabaseConnector db;
 
     /**
      * Creates new form ViewBoatsScreen
@@ -27,8 +28,10 @@ public class ViewBoatsScreen extends javax.swing.JFrame {
      * @param userN
      */
     //Constructer for the ViewBoatScreen
-    public ViewBoatsScreen(Users userN) {
+    public ViewBoatsScreen(Users userN, Dashboard dashN) {
         user = userN;
+        dash = dashN;
+        db = dash.db;
         //creates the JFrame and populates it with content
         initComponents();
         //Sets the JFrame to the center of the users screen

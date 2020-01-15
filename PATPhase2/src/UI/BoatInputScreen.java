@@ -17,6 +17,8 @@ public class BoatInputScreen extends javax.swing.JFrame {
 
     private String errMsg;
     private Users user;
+    private Dashboard dash;
+    private DatabaseConnector db;
 
     /**
      * Creates new form InputScreen
@@ -24,13 +26,15 @@ public class BoatInputScreen extends javax.swing.JFrame {
      * @param userN
      */
     //Constructer takes in a user and sets the private user varible to it
-    public BoatInputScreen(Users userN) {
+    public BoatInputScreen(Users userN, Dashboard dashN) {
         //creates the JFrame and populates it with content
         initComponents();
         //Sets the JFrame to the center of the users screen
         this.setLocationRelativeTo(null);
         setErrorPaneVisable(false);
         user = userN;
+        dash = dashN;
+        db = dash.db;
         //Instantiate the errMsg varible
         errMsg = "";
     }
@@ -299,7 +303,6 @@ public class BoatInputScreen extends javax.swing.JFrame {
         errMsg = "Validation compleate\n";
         setErrorPaneVisable(false);
         boolean err = false;
-        DatabaseConnector db = new DatabaseConnector();
 
         //Pressence check for String input
         if (txtInputString.getText().isEmpty()) {
