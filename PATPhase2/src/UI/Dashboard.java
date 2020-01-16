@@ -245,40 +245,40 @@ public class Dashboard extends javax.swing.JFrame {
             String[] temp = boatList[i].split(",");
             //Checks which slot the current boat is in and sets the name of the cell to the boat name
             switch (temp[6]) {
-                case "1":
+                case "Slot 1":
                     lblBoatName1.setText(temp[1]);
                     break;
-                case "2":
+                case "Slot 2":
                     lblBoatName2.setText(temp[1]);
                     break;
-                case "3":
+                case "Slot 3":
                     lblBoatName3.setText(temp[1]);
                     break;
-                case "4":
+                case "Slot 4":
                     lblBoatName4.setText(temp[1]);
                     break;
-                case "5":
+                case "Slot 5":
                     lblBoatName5.setText(temp[1]);
                     break;
-                case "6":
+                case "Slot 6":
                     lblBoatName6.setText(temp[1]);
                     break;
-                case "7":
+                case "Slot 7":
                     lblBoatName7.setText(temp[1]);
                     break;
-                case "8":
+                case "Slot 8":
                     lblBoatName8.setText(temp[1]);
                     break;
-                case "9":
+                case "Slot 9":
                     lblBoatName9.setText(temp[1]);
                     break;
-                case "10":
+                case "Slot 10":
                     lblBoatName10.setText(temp[1]);
                     break;
-                case "11":
+                case "Slot 11":
                     lblBoatName11.setText(temp[1]);
                     break;
-                case "12":
+                case "Slot 12":
                     lblBoatName12.setText(temp[1]);
                     break;
             }
