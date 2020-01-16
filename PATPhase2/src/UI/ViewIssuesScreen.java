@@ -51,11 +51,6 @@ public class ViewIssuesScreen extends javax.swing.JFrame {
 
         pnlBG.setBackground(new java.awt.Color(153, 153, 153));
 
-        listIssues.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
         jScrollPane1.setViewportView(listIssues);
 
         btnFilter.setText("Filter");
@@ -64,7 +59,7 @@ public class ViewIssuesScreen extends javax.swing.JFrame {
 
         lblServerity.setText("Serverity");
 
-        cboxServerity.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", " " }));
+        cboxServerity.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Any", "1", "2", "3" }));
 
         lblDateFrom.setText("From");
 
@@ -92,7 +87,7 @@ public class ViewIssuesScreen extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblDateTo)
                 .addGap(18, 18, 18)
-                .addComponent(txtBoatName, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)
+                .addComponent(txtBoatName, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblBoatName)
                 .addGap(18, 18, 18)
