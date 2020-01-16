@@ -1,6 +1,7 @@
 package Java;
 
 import Models.Boats;
+import Models.Issues;
 import Models.Users;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
