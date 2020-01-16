@@ -319,7 +319,7 @@ public class ViewBoatsScreen extends javax.swing.JFrame {
     private void populateList() {
         String[] model = db.getAllBoats(user);
         DefaultListModel dlm = new DefaultListModel();
-        for (int i = 0; i < model.length; i++) {
+        for(int i = 0; i < model.length; i++) {
             dlm.addElement(model[i]);
         }
         listBoats.setModel(dlm);

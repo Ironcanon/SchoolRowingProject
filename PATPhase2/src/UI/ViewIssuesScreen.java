@@ -5,19 +5,34 @@
  */
 package UI;
 
+import Java.DatabaseConnector;
+import Models.Users;
+import javax.swing.DefaultListModel;
+
 /**
  *
  * @author stuff
  */
 public class ViewIssuesScreen extends javax.swing.JFrame {
-
+    
+    private Users user;
+    private Dashboard dash;
+    DatabaseConnector db;
     /**
      * Creates new form IssuesScreen
      */
     public ViewIssuesScreen() {
         initComponents();
     }
-
+    
+    private void populateList() {
+        String[] model = db.getAllBoats(user);
+        DefaultListModel dlm = new DefaultListModel();
+        for(int i = 0; i < model.length; i++) {
+            dlm.addElement(model[i]);
+        }
+        listIssues.setModel(dlm);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

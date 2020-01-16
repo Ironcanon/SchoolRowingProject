@@ -410,7 +410,58 @@ public class DatabaseConnector {
         }
     }
     
-    public Issues[] getAllIssues(){
-        return null;
+    public String[] getAllIssues(Users user){
+        Issues[] issues;
+        String[] modelS = new String[0];
+        int count = 0;
+        Issues tempIssue;
+        try {
+            String query = "SELECT * FROM tblIssues WHERE SchoolCode = ?";
+            preparedStatment = conn.prepareStatement(query);
+            preparedStatment.setString(1, user.getSchoolCode());
+            resultSet = preparedStatment.executeQuery();
+            int length = 0;
+
+            while (resultSet.next()) {
+                length++;
+            }
+
+            resultSet = preparedStatment.executeQuery();
+
+            issues = new Issues[length];
+            while (resultSet.next()) {
+                int issueID = resultSet.getInt(1);
+                String boatName = resultSet.getString(2);
+                String schoolCode = resultSet.getString(3);
+                String description = resultSet.getString(4);
+                int serverity = resultSet.getInt(5);
+                Calendar dateFound = Calendar.getInstance();
+                dateFound.setTime(resultSet.getDate(6));
+                String userFound = resultSet.getString(7);
+                boolean fixed = resultSet.getBoolean(8);
+                if(fixed){
+                    Calendar dateFixed = Calendar.getInstance();
+                    dateFixed.setTime(resultSet.getDate(9));
+                    String userFixed = resultSet.getString(10);
+                    tempIssue = new Issues(issueID, boatName, schoolCode, description, serverity, dateFound, getUser(userFound), fixed, getUser(userFixed), dateFixed);
+                }else{
+                    tempIssue = new Issues(issueID, boatName, schoolCode, description, serverity, dateFound, getUser(userFound), fixed);
+                }
+                
+               
+                issues[count] = tempIssue;
+                count++;
+            }
+
+            modelS = new String[issues.length];
+
+            for (int i = 0; i < issues.length; i++) {
+                modelS[i] = issues[i].toString();
+            }
+
+        } catch (SQLException e) {
+            System.out.println("[DB] - Error - getAllBoats/n" + e);
+        }
+        return modelS;
     }
 }
