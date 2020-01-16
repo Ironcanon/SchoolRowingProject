@@ -43,12 +43,6 @@ public class Dashboard extends javax.swing.JFrame {
     private void initComponents() {
 
         pnlBG = new javax.swing.JPanel();
-        txtLblUsername = new javax.swing.JLabel();
-        txtLblSecurityLvl = new javax.swing.JLabel();
-        btnAddBoat = new javax.swing.JButton();
-        btnViewBoats = new javax.swing.JButton();
-        lblUsername = new javax.swing.JLabel();
-        lblSecurityLvl = new javax.swing.JLabel();
         pnlTrailerLayout = new javax.swing.JPanel();
         lblBoatName1 = new javax.swing.JLabel();
         lblBoatName2 = new javax.swing.JLabel();
@@ -63,40 +57,26 @@ public class Dashboard extends javax.swing.JFrame {
         lblBoatName11 = new javax.swing.JLabel();
         lblBoatName12 = new javax.swing.JLabel();
         lblBGImage = new javax.swing.JLabel();
-        btnSetBoat = new javax.swing.JButton();
+        pnlBoatsButtons = new javax.swing.JPanel();
         btnSwapBoat = new javax.swing.JButton();
+        btnSetBoat = new javax.swing.JButton();
+        btnViewBoats = new javax.swing.JButton();
+        btnAddBoat = new javax.swing.JButton();
+        lblBoatsButtons = new javax.swing.JLabel();
+        pnlIssues = new javax.swing.JPanel();
+        btnViewBoats1 = new javax.swing.JButton();
+        btnAddBoat1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        txtLblUsername = new javax.swing.JLabel();
+        txtLblSecurityLvl = new javax.swing.JLabel();
+        lblUsername = new javax.swing.JLabel();
+        lblSecurityLvl = new javax.swing.JLabel();
         btnHelp = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         pnlBG.setBackground(new java.awt.Color(153, 153, 153));
-
-        txtLblUsername.setBackground(new java.awt.Color(255, 255, 255));
-        txtLblUsername.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtLblUsername.setOpaque(true);
-
-        txtLblSecurityLvl.setBackground(new java.awt.Color(255, 255, 255));
-        txtLblSecurityLvl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtLblSecurityLvl.setOpaque(true);
-
-        btnAddBoat.setText("Add Boat");
-        btnAddBoat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddBoatActionPerformed(evt);
-            }
-        });
-
-        btnViewBoats.setText("View Boats");
-        btnViewBoats.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewBoatsActionPerformed(evt);
-            }
-        });
-
-        lblUsername.setText("Username");
-
-        lblSecurityLvl.setText("Security Level");
 
         pnlTrailerLayout.setBackground(new java.awt.Color(255, 255, 255));
         pnlTrailerLayout.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -140,12 +120,7 @@ public class Dashboard extends javax.swing.JFrame {
         lblBGImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/TrailerOverlay.png"))); // NOI18N
         pnlTrailerLayout.add(lblBGImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        btnSetBoat.setText("Set Boat");
-        btnSetBoat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSetBoatActionPerformed(evt);
-            }
-        });
+        pnlBoatsButtons.setBackground(new java.awt.Color(153, 153, 153));
 
         btnSwapBoat.setText("Swap Boat");
         btnSwapBoat.addActionListener(new java.awt.event.ActionListener() {
@@ -153,6 +128,104 @@ public class Dashboard extends javax.swing.JFrame {
                 btnSwapBoatActionPerformed(evt);
             }
         });
+
+        btnSetBoat.setText("Set Boat");
+        btnSetBoat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSetBoatActionPerformed(evt);
+            }
+        });
+
+        btnViewBoats.setText("View Boats");
+        btnViewBoats.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewBoatsActionPerformed(evt);
+            }
+        });
+
+        btnAddBoat.setText("Add Boat");
+        btnAddBoat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddBoatActionPerformed(evt);
+            }
+        });
+
+        lblBoatsButtons.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblBoatsButtons.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBoatsButtons.setText("Boats");
+
+        javax.swing.GroupLayout pnlBoatsButtonsLayout = new javax.swing.GroupLayout(pnlBoatsButtons);
+        pnlBoatsButtons.setLayout(pnlBoatsButtonsLayout);
+        pnlBoatsButtonsLayout.setHorizontalGroup(
+            pnlBoatsButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblBoatsButtons, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnViewBoats, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
+            .addComponent(btnAddBoat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnSetBoat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnSwapBoat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        pnlBoatsButtonsLayout.setVerticalGroup(
+            pnlBoatsButtonsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBoatsButtonsLayout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(lblBoatsButtons, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnAddBoat, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnViewBoats, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnSetBoat, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnSwapBoat, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pnlIssues.setBackground(new java.awt.Color(153, 153, 153));
+
+        btnViewBoats1.setText("View Issues");
+
+        btnAddBoat1.setText("Add Issue");
+        btnAddBoat1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddBoat1ActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Issues");
+
+        javax.swing.GroupLayout pnlIssuesLayout = new javax.swing.GroupLayout(pnlIssues);
+        pnlIssues.setLayout(pnlIssuesLayout);
+        pnlIssuesLayout.setHorizontalGroup(
+            pnlIssuesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnViewBoats1, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
+            .addComponent(btnAddBoat1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        pnlIssuesLayout.setVerticalGroup(
+            pnlIssuesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlIssuesLayout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnAddBoat1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnViewBoats1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        txtLblUsername.setBackground(new java.awt.Color(255, 255, 255));
+        txtLblUsername.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtLblUsername.setOpaque(true);
+
+        txtLblSecurityLvl.setBackground(new java.awt.Color(255, 255, 255));
+        txtLblSecurityLvl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtLblSecurityLvl.setOpaque(true);
+
+        lblUsername.setText("Username");
+
+        lblSecurityLvl.setText("Security Level");
 
         btnHelp.setText("Help");
         btnHelp.addActionListener(new java.awt.event.ActionListener() {
@@ -166,13 +239,14 @@ public class Dashboard extends javax.swing.JFrame {
         pnlBGLayout.setHorizontalGroup(
             pnlBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlBGLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnlBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnViewBoats, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                    .addComponent(btnAddBoat, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                    .addComponent(btnSetBoat, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                    .addComponent(btnSwapBoat, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE))
-                .addGap(30, 30, 30)
+                .addGroup(pnlBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBGLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(pnlBoatsButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnlBGLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(pnlIssues, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
                 .addComponent(pnlTrailerLayout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnlBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -194,30 +268,21 @@ public class Dashboard extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(pnlBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlBGLayout.createSequentialGroup()
-                        .addGroup(pnlBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(pnlBGLayout.createSequentialGroup()
-                                .addComponent(btnAddBoat, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnViewBoats, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(pnlBGLayout.createSequentialGroup()
-                                .addGroup(pnlBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lblUsername, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(txtLblUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(pnlBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtLblSecurityLvl, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
-                                    .addComponent(lblSecurityLvl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(pnlBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(pnlBGLayout.createSequentialGroup()
-                                .addComponent(btnSetBoat, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnSwapBoat, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBGLayout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(btnHelp))))
-                    .addComponent(pnlTrailerLayout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(pnlBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblUsername, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtLblUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(pnlBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtLblSecurityLvl, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
+                            .addComponent(lblSecurityLvl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnHelp))
+                    .addComponent(pnlTrailerLayout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(pnlBGLayout.createSequentialGroup()
+                        .addComponent(pnlBoatsButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(pnlIssues, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -374,12 +439,19 @@ public class Dashboard extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnHelpActionPerformed
 
+    private void btnAddBoat1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddBoat1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddBoat1ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddBoat;
+    private javax.swing.JButton btnAddBoat1;
     private javax.swing.JButton btnHelp;
     private javax.swing.JButton btnSetBoat;
     private javax.swing.JButton btnSwapBoat;
     private javax.swing.JButton btnViewBoats;
+    private javax.swing.JButton btnViewBoats1;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lblBGImage;
     private javax.swing.JLabel lblBoatName1;
     private javax.swing.JLabel lblBoatName10;
@@ -393,9 +465,12 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel lblBoatName7;
     private javax.swing.JLabel lblBoatName8;
     private javax.swing.JLabel lblBoatName9;
+    private javax.swing.JLabel lblBoatsButtons;
     private javax.swing.JLabel lblSecurityLvl;
     private javax.swing.JLabel lblUsername;
     private javax.swing.JPanel pnlBG;
+    private javax.swing.JPanel pnlBoatsButtons;
+    private javax.swing.JPanel pnlIssues;
     private javax.swing.JPanel pnlTrailerLayout;
     private javax.swing.JLabel txtLblSecurityLvl;
     private javax.swing.JLabel txtLblUsername;
