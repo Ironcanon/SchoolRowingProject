@@ -124,10 +124,17 @@ public class Boats {
         }
     }
 
+    private String getTrueSlot(int slot){
+        if(slot == -1){
+            return "Not in trailer";
+        } else{
+            return "Slot " + slot;
+        }
+    }
     //Returns a String describing the Boat object
     @Override
     public String toString() {
-        return "" + boatID + "," + name + "," + SeatNum + "," + HIN + "," + convertOarType(oarType) + "," + form.format(dateOfPurchase.getTime()) + "," + slot + "," + schoolCode;
+        return "" + boatID + "," + name + "," + SeatNum + "," + HIN + "," + convertOarType(oarType) + "," + form.format(dateOfPurchase.getTime()) + "," + getTrueSlot(slot) + "," + schoolCode;
     }
 
 }

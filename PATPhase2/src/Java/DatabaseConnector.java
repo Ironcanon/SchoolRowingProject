@@ -408,4 +408,8 @@ public class DatabaseConnector {
             System.out.println("[DB] - Error - deleteBoat/n" + e);
         }
     }
+    
+    public Issues[] getAllIssues(){
+        return null;
+    }
 }
