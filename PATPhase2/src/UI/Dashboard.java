@@ -11,24 +11,27 @@ import java.io.IOException;
  */
 public class Dashboard extends javax.swing.JFrame {
 
-    Users user;
-    BoatInputScreen BIS;
-    ViewBoatsScreen VBS;
-    SwapBoatScreen SwBS;
-    SetBoatScreen SeBS;
+    private Users user;
+    private BoatInputScreen BIS;
+    private ViewBoatsScreen VBS;
+    private SwapBoatScreen SwBS;
+    private SetBoatScreen SeBS;
+    public DatabaseConnector db;
 
     /**
      * Creates new form Dashboard
      *
      * @param userN
+     * @param DBC
      */
     //Constructer takes in a user and sets the private user varible to it
-    public Dashboard(Users userN) {
+    public Dashboard(Users userN, DatabaseConnector DBC) {
         //creates the JFrame and populates it with content
         initComponents();
         //Sets the JFrame to the center of the users screen
         this.setLocationRelativeTo(null);
         user = userN;
+        db = DBC;
         //Calls the helper methode to update the trailer gui
         updateTrailer(user);
         txtLblUsername.setText(userN.getName());
@@ -234,7 +237,6 @@ public class Dashboard extends javax.swing.JFrame {
     //Refreshes the gui trailer on the dashboard with the boats in the trailer
 
     public void updateTrailer(Users user) {
-        DatabaseConnector db = new DatabaseConnector();
         //Grabs an array of all the boats that are in the trailer (that have a slot != -1)
         String[] boatList = db.getBoatsInTrailer(user, false);
 
@@ -354,12 +356,12 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSetBoatActionPerformed
     //Instantiates a new ViewBoatScreen with the local user and this Dashboard object and sets it visable
     private void btnViewBoatsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewBoatsActionPerformed
-        VBS = new ViewBoatsScreen(user);
+        VBS = new ViewBoatsScreen(user, this);
         VBS.setVisible(true);
     }//GEN-LAST:event_btnViewBoatsActionPerformed
     //Instantiates a new AddBoatScreen with this Dashboard object and sets it visable
     private void btnAddBoatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddBoatActionPerformed
-        BIS = new BoatInputScreen(user);
+        BIS = new BoatInputScreen(user, this);
         BIS.setVisible(true);
     }//GEN-LAST:event_btnAddBoatActionPerformed
     //Opens the help file
